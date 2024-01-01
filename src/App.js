@@ -1,21 +1,12 @@
 import '../src/css/index.css'
+import HomePage from './pages/HomePage';
+// import Router from './Router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="bg-red-500">
-    hello word !!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <HomePage />
+      {/* <Router /> */}
     </div>
   );
 }

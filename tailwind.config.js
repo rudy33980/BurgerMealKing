@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}",'./public/index.html'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -15,6 +15,13 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+
+      'primary': '#cccccc',
+        'primary-hover': '#f5b029',
+      'secondary': '#3d2514',
+        'secondary-hover': '#231105',
+      'red-primary': '#bf2222',
+        'red-primary': '#990e0e',
 
       black: colors.black,
       white: colors.white,
@@ -239,6 +246,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      'secondary':['"Alfa Slab One"'],
       sans: [
         'ui-sans-serif',
         'system-ui',

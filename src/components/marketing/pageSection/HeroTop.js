@@ -13,9 +13,21 @@ export default function HeroTop() {
                     <div className='relative mt-20 w-full'>
                         <img src={Product} className="absolute z-0 -top-64 right-0 w-6/12" alt="Un menu hamburger avec frites et coca cola"></img>
 
+                        <div className='absolute right-80 top-40 rounded-full bg-red-primary w-40 h-40 p-3'>
+                            <div className='w-full h-full rounded-full border-2 border-dashed  border-white text-white flex items-center justify-center'>
+                                <div className='text-center'>
+                                    <span className='block font-extrabold'>
+                                        <span className='text-5xl'>5</span>.49
+                                    </span>
+                                    <span className='tracking-widest uppercase text-sm'>seulement</span>
+                                </div>
+
+                            </div>
+                        </div>
+
                         <div className='relative z-10 text-secondary uppercase'>
                             <h1 className='mb-4 font-semibold'>C'est le moment de goûter au bon goût des hamburgers</h1>
-                            <h2 className='font-secondary'>
+                            <h2 className='font-secondary shadoxTitleSecondary'>
                                 <span className='text-8xl block'>Burger</span>
                                 <span className='text-6xl'>House</span>
                                 <span className='text-4xl ml-3'>Click<span className='text-red-primary'>&</span>collect</span>

@@ -21,7 +21,6 @@ export default function HeroTop() {
                                     </span>
                                     <span className='tracking-widest uppercase text-sm'>seulement</span>
                                 </div>
-
                             </div>
                         </div>
 
@@ -37,7 +36,7 @@ export default function HeroTop() {
                     <Button className="mt-5" color="secondary" theme="big">
                         Créer mon compte
                     </Button>
-       
+
                 </Container>
 
             </div>

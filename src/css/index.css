@@ -6,6 +6,12 @@
 
 body {
     font-family: 'Roboto, Alfa-Slab-One';
+    color: red;
+    @apply text-secondary;
+}
+p {
+    @apply mb-4;
+
 }
 .animate {
     transition: all .2s ease-in-out;

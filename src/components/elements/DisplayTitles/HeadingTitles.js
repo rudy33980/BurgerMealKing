@@ -4,7 +4,7 @@ export default function HeadingTitles(props) {
 
     const { children, variant } = props
 
-    const classDefault = "px-7 py-3 bg-yellow-500 text-secondary uppercase font-hold inline-block"
+    const classDefault = "uppercase"
 
     switch (variant) {
         case "h3":

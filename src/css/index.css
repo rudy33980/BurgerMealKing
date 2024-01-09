@@ -6,8 +6,9 @@
 
 body {
     font-family: 'Roboto, Alfa-Slab-One';
-    color: red;
+    overflow-x: hidden;
     @apply text-secondary;
+
 }
 p {
     @apply mb-4;

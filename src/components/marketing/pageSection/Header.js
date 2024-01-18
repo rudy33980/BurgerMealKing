@@ -2,13 +2,15 @@ import React from 'react'
 import Logo from '../../../media/svg/Logo-burger-house.svg'
 import Icone from '../../../media/svg/ico-bag-clickAndCollect.svg'
 import Button from '../../elements/Button'
+import Pictogramme from '../../../media/svg/logo.jpg'
 
 
 export default function Header() {
     return (
         <div className='relative z-10 flex items-center justify-between py-10'>
             <div className="w-full">
-                <img src={Logo} alt="Burger Meal App" className="w-64" />
+                <img src={Logo} alt="Burger Meal App" className="w-64 hidden md:block" />
+                <img src={Pictogramme} alt="Burger Meal App" className="w-10 md:hidden" />
             </div>
             <div className='w-full text-secondary'>
             <div className="flex items-center justify-end">

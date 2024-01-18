@@ -10,7 +10,7 @@ export default function Booking() {
         <Container>
             <div className='relative mb-20'>
                 <img src={Burger} alt="Un hamburger" className='absolute -top-20 -left-36 z-10' />
-                <img src={Sauce} alt="Une sauce pimentée" className='absolute bottom-0 left-0' />
+                <img src={Sauce} alt="Une sauce pimentée" className='hidden lg:block absolute bottom-0 left-0' />
                 <img src={Assiette} alt="Une assiette hamburger frites" className='absolute -bottom-52 -right-96' />
                 <div className='max-w-3xl mx-auto py-72 '>
                     <Heading variant='h3' alignement="center">
@@ -24,7 +24,7 @@ export default function Booking() {
                             <label htmlFor='name'>
                                 Nom
                             </label>
-                            <imput
+                            <input
                                 type="text"
                                 name="name"
                                 id="name"
@@ -38,7 +38,7 @@ export default function Booking() {
                             <label htmlFor='name'>
                                 Email
                             </label>
-                            <imput
+                            <input
                                 type="email"
                                 name="email"
                                 id="email"
@@ -52,7 +52,7 @@ export default function Booking() {
                             <label htmlFor='name'>
                                 Date
                             </label>
-                            <imput
+                            <input
                                 type="time"
                                 name="customer"
                                 id="customer"
@@ -66,7 +66,7 @@ export default function Booking() {
                             <label htmlFor='name'>
                                 Heure
                             </label>
-                            <imput
+                            <input
                                 type="time"
                                 name="time"
                                 id="time"
@@ -77,9 +77,9 @@ export default function Booking() {
 
                         <div >
                             <label htmlFor='customer'>
-                                Nombre de personnes 
+                                Nombre de personnes
                             </label>
-                            <imput
+                            <input
                                 type="text"
                                 name="customer"
                                 id="customer"
@@ -91,14 +91,14 @@ export default function Booking() {
 
                         <div >
                             <label htmlFor='sendBooking' className='invisible'>
-                               Réserver votre repas 
+                            Trouver une table
                             </label>
-                            <imput
+                            <input
                                 type="button"
                                 name="sendBooking"
                                 id="sendBooking"
                                 className="bg-red-primary hover:bg-red-primary-hover w-full text-white font-secondary tracking-widest uppercase py-5 cursor-ponter rounded-md animate"
-                                value="Réserver votre repas"
+                                value="Trouver une table"
                             />
                         </div>
 

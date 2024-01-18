@@ -11,7 +11,7 @@ import Heading from '../../elements/DisplayTitles/Heading'
 
 const Slide = ({ children, category, title, image }) => {
   return (
-    <div className='grid grid-cols-2 p-6 h-96'>
+    <div className='grid md:grid-cols-2 p-3 md:p-6 '>
       <div className='p-10 mb-10 '>
         <Heading variant='h4'>
           {category}
@@ -19,11 +19,11 @@ const Slide = ({ children, category, title, image }) => {
         <Heading theme="secondary" variant="h3" className="mb-5">
           {title}
         </Heading>
-        <p className='tracking-wide text-lg leading-relaxed font-light text-gray-500  '>
+        <p className='tracking-wide text-lg leading-relaxed font-light text-gray-500 mb-0 md:mb-10 '>
           {children}
         </p>
       </div>
-      <div className='relative w-full h-full'>
+      <div className='relative w-full md:h-full'>
         <img src={image} alt='Un hamburger' className='bg-yellow-500 absolute top-0 left-0 w-full h-full object-cover object-bottom z-0' />
       </div>
     </div>
@@ -62,7 +62,7 @@ export default function Event() {
 
   return (
     <Container>
-      <div className='shadow-2xl mb-20'></div>
+      <div className='shadow-2xl mb-20 border-gray-100'>
       <AliceCarousel
         mouseTracking
         items={items}
@@ -72,6 +72,7 @@ export default function Event() {
         disableButtonsControls
         animationType='fadeout' 
       />
+      </div>
     </Container>
   )
 }

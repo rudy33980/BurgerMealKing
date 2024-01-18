@@ -9,10 +9,10 @@ import Heading from '../../elements/DisplayTitles/Heading'
 
 
 
-const Slide = ({ children, category, title, image }) => {
+const Slide = ({ children, category, title, image, alt }) => {
   return (
     <div className='grid md:grid-cols-2 p-3 md:p-6 '>
-      <div className='p-10 mb-10 '>
+      <div className='p-5 md:p-10 md:mb-10 '>
         <Heading variant='h4'>
           {category}
         </Heading>
@@ -24,7 +24,7 @@ const Slide = ({ children, category, title, image }) => {
         </p>
       </div>
       <div className='relative w-full md:h-full'>
-        <img src={image} alt='Un hamburger' className='bg-yellow-500 absolute top-0 left-0 w-full h-full object-cover object-bottom z-0' />
+        <img src={image} alt={alt} className='bg-yellow-500 absolute top-0 left-0 w-full h-full object-cover object-bottom z-0' />
       </div>
     </div>
   )
